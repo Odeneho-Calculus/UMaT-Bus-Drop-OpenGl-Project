@@ -8,27 +8,31 @@ CE200[B]
 OPENGL PROJECT
 */
 
-#ifndef STUDENTS_H
-#define STUDENTS_H
+#ifndef BUILDINGS_H
+#define BUILDINGS_H
 #include <stdlib.h>
 #include <GL/glut.h>
 #include<string.h>
 #include<stdio.h>
 
 
-class Students
+#define maxx 10
+#define maxy 12
+#define dx 27.7
+#define dy 12
+
+
+class Buildings
 {
     public:
-        Students();
-        void studBoy1();
-        void studBoy2();
-        void studBoy2Drop();
-
-        void studGirl1();
+        Buildings();
+        void buildingd();
+        void Walld();
+        void Gated();
 
     protected:
 
     private:
 };
 
-#endif // STUDENTS_H
+#endif // BUILDINGS_H

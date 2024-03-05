@@ -1,10 +1,14 @@
 # depslib dependency file v1.0
-1709596463 source:c:\users\calcu\desktop\ubd\ubd\main.cpp
+1709652597 source:c:\users\calcu\desktop\ubd\ubd\main.cpp
 	<stdlib.h>
 	<GL/glut.h>
 	<string.h>
 	<stdio.h>
 	"Students.h"
+	"Bus.h"
+	"Compound.h"
+	"kalText.h"
+	"Buildings.h"
 
 1526093414 c:\program files\codeblocks\mingw\x86_64-w64-mingw32\include\stdlib.h
 	<crtdefs.h>
@@ -896,14 +900,66 @@
 
 1526093414 c:\program files\codeblocks\mingw\x86_64-w64-mingw32\include\_mingw_print_pop.h
 
-1709596404 source:c:\users\calcu\desktop\ubd\ubd\src\students.cpp
+1709654487 source:c:\users\calcu\desktop\ubd\ubd\src\students.cpp
 	"Students.h"
 	<stdlib.h>
 	<GL/glut.h>
 	<string.h>
 	<stdio.h>
 
-1709596083 c:\users\calcu\desktop\ubd\ubd\include\students.h
+1709654561 c:\users\calcu\desktop\ubd\ubd\include\students.h
+	<stdlib.h>
+	<GL/glut.h>
+	<string.h>
+	<stdio.h>
+
+1709654517 c:\users\calcu\desktop\ubd\ubd\include\bus.h
+	<stdlib.h>
+	<GL/glut.h>
+	<string.h>
+	<stdio.h>
+
+1709654438 source:c:\users\calcu\desktop\ubd\ubd\src\bus.cpp
+	"Bus.h"
+	<stdlib.h>
+	<GL/glut.h>
+	<string.h>
+	<stdio.h>
+
+1709654455 source:c:\users\calcu\desktop\ubd\ubd\src\compound.cpp
+	"Compound.h"
+	<stdlib.h>
+	<GL/glut.h>
+	<string.h>
+	<stdio.h>
+
+1709654535 c:\users\calcu\desktop\ubd\ubd\include\compound.h
+	<stdlib.h>
+	<GL/glut.h>
+	<string.h>
+	<stdio.h>
+
+1709654550 c:\users\calcu\desktop\ubd\ubd\include\kaltext.h
+	<stdlib.h>
+	<GL/glut.h>
+	<string.h>
+	<stdio.h>
+
+1709654470 source:c:\users\calcu\desktop\ubd\ubd\src\kaltext.cpp
+	"kalText.h"
+	<stdlib.h>
+	<GL/glut.h>
+	<string.h>
+	<stdio.h>
+
+1709654423 source:c:\users\calcu\desktop\ubd\ubd\src\buildings.cpp
+	"Buildings.h"
+	<stdlib.h>
+	<GL/glut.h>
+	<string.h>
+	<stdio.h>
+
+1709654502 c:\users\calcu\desktop\ubd\ubd\include\buildings.h
 	<stdlib.h>
 	<GL/glut.h>
 	<string.h>

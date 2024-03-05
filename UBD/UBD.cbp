@@ -44,9 +44,17 @@
 			<Add library="gdi32" />
 			<Add directory="C:/Program Files/CodeBlocks/MinGW/x86_64-w64-mingw32/lib" />
 		</Linker>
+		<Unit filename="include/Buildings.h" />
+		<Unit filename="include/Bus.h" />
+		<Unit filename="include/Compound.h" />
 		<Unit filename="include/Students.h" />
+		<Unit filename="include/kalText.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Buildings.cpp" />
+		<Unit filename="src/Bus.cpp" />
+		<Unit filename="src/Compound.cpp" />
 		<Unit filename="src/Students.cpp" />
+		<Unit filename="src/kalText.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

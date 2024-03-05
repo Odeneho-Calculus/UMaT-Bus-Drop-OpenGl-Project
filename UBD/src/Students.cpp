@@ -1,10 +1,17 @@
+/*
+PROJECT TITLE:: UMaT BUS DROP [UBD]
+DEVELOPED BY KALCULUS GUY
+==========================
+ANTWI THOMAS
+SRI.41.008.038.22
+CE200[B]
+OPENGL PROJECT
+*/
+
 #include "Students.h"
-
-
 #include <stdlib.h>
 #include <GL/glut.h>
 #include<string.h>
-
 #include<stdio.h>
 
 
