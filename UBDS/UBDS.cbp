@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="UBD" />
+		<Option title="UBDS" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/UBD" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/UBDS" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="C:/Program Files/CodeBlocks/MinGW/x86_64-w64-mingw32/bin" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
@@ -18,7 +18,7 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/UBD" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/UBDS" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="C:/Program Files/CodeBlocks/MinGW/x86_64-w64-mingw32/bin" />
 				<Option object_output="obj/Release/" />
 				<Option type="0" />
@@ -46,14 +46,12 @@
 		</Linker>
 		<Unit filename="include/Buildings.h" />
 		<Unit filename="include/Bus.h" />
-		<Unit filename="include/Colors.h" />
 		<Unit filename="include/Compound.h" />
 		<Unit filename="include/Students.h" />
 		<Unit filename="include/kalText.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Buildings.cpp" />
 		<Unit filename="src/Bus.cpp" />
-		<Unit filename="src/Colors.cpp" />
 		<Unit filename="src/Compound.cpp" />
 		<Unit filename="src/Students.cpp" />
 		<Unit filename="src/kalText.cpp" />

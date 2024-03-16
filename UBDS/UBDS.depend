@@ -1,15 +1,16 @@
 # depslib dependency file v1.0
-1710606198 source:c:\users\calcu\desktop\ubd\ubd\main.cpp
+1710623185 source:c:\users\calcu\desktop\cg to github\ubds\src\students.cpp
+	"Students.h"
 	<stdlib.h>
 	<GL/glut.h>
 	<string.h>
 	<stdio.h>
-	<iostream>
-	"Students.h"
-	"Bus.h"
-	"Compound.h"
-	"kalText.h"
-	"Buildings.h"
+
+1710623201 c:\users\calcu\desktop\cg to github\ubds\include\students.h
+	<stdlib.h>
+	<GL/glut.h>
+	<string.h>
+	<stdio.h>
 
 1526093414 c:\program files\codeblocks\mingw\x86_64-w64-mingw32\include\stdlib.h
 	<crtdefs.h>
@@ -901,71 +902,42 @@
 
 1526093414 c:\program files\codeblocks\mingw\x86_64-w64-mingw32\include\_mingw_print_pop.h
 
-1709654487 source:c:\users\calcu\desktop\ubd\ubd\src\students.cpp
-	"Students.h"
-	<stdlib.h>
-	<GL/glut.h>
-	<string.h>
-	<stdio.h>
-
-1709654561 c:\users\calcu\desktop\ubd\ubd\include\students.h
-	<stdlib.h>
-	<GL/glut.h>
-	<string.h>
-	<stdio.h>
-
-1709654517 c:\users\calcu\desktop\ubd\ubd\include\bus.h
-	<stdlib.h>
-	<GL/glut.h>
-	<string.h>
-	<stdio.h>
-
-1709654438 source:c:\users\calcu\desktop\ubd\ubd\src\bus.cpp
+1710623259 source:c:\users\calcu\desktop\cg to github\ubds\src\bus.cpp
 	"Bus.h"
 	<stdlib.h>
 	<GL/glut.h>
 	<string.h>
 	<stdio.h>
 
-1710573239 source:c:\users\calcu\desktop\ubd\ubd\src\compound.cpp
+1710623269 c:\users\calcu\desktop\cg to github\ubds\include\bus.h
+	<stdlib.h>
+	<GL/glut.h>
+	<string.h>
+	<stdio.h>
+
+1710623319 source:c:\users\calcu\desktop\cg to github\ubds\src\compound.cpp
 	"Compound.h"
 	<stdlib.h>
 	<GL/glut.h>
 	<string.h>
 	<stdio.h>
 
-1709654535 c:\users\calcu\desktop\ubd\ubd\include\compound.h
+1710623329 c:\users\calcu\desktop\cg to github\ubds\include\compound.h
 	<stdlib.h>
 	<GL/glut.h>
 	<string.h>
 	<stdio.h>
 
-1710575418 c:\users\calcu\desktop\ubd\ubd\include\kaltext.h
-	<stdlib.h>
-	<GL/glut.h>
-	<string.h>
-	<stdio.h>
-
-1710579412 source:c:\users\calcu\desktop\ubd\ubd\src\kaltext.cpp
+1710623367 source:c:\users\calcu\desktop\cg to github\ubds\src\kaltext.cpp
 	"kalText.h"
 	<stdlib.h>
 	<GL/glut.h>
 	<string.h>
 	<stdio.h>
 
-1709818070 source:c:\users\calcu\desktop\ubd\ubd\src\buildings.cpp
-	"Buildings.h"
+1710623379 c:\users\calcu\desktop\cg to github\ubds\include\kaltext.h
 	<stdlib.h>
 	<GL/glut.h>
 	<string.h>
 	<stdio.h>
-
-1709654502 c:\users\calcu\desktop\ubd\ubd\include\buildings.h
-	<stdlib.h>
-	<GL/glut.h>
-	<string.h>
-	<stdio.h>
-
-1710584885 c:\users\calcu\desktop\ubd\ubd\include\colors.h
-	<string.h>
 
