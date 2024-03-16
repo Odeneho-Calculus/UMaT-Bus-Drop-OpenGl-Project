@@ -1,6 +1,6 @@
 /*
 PROJECT TITLE:: UMaT BUS DROP [UBD]
-DEVELOPED BY KALCULUS GUY
+INTRODUCED IN OOP BY KALCULUS GUY
 ==========================
 ANTWI THOMAS
 SRI.41.008.038.22
@@ -49,7 +49,7 @@ glEnd();
 
 /************  STRIPES  ************/
 
-glColor3f(1.0,0.9,0.0);
+glColor3f(1.0,1.0,1.0);
 for(x=0;x<1000;x=x+60)
 {
 glBegin(GL_POLYGON);
@@ -96,7 +96,7 @@ glEnd();
 
 /************  STRIPES  ************/
 
-glColor3f(1.0,0.9,0.0);
+glColor3f(1.0,1.0,1.0);
 for(x=0;x<1000;x=x+60)
 {
 glBegin(GL_POLYGON);

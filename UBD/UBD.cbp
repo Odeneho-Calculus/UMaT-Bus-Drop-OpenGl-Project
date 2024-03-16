@@ -46,12 +46,14 @@
 		</Linker>
 		<Unit filename="include/Buildings.h" />
 		<Unit filename="include/Bus.h" />
+		<Unit filename="include/Colors.h" />
 		<Unit filename="include/Compound.h" />
 		<Unit filename="include/Students.h" />
 		<Unit filename="include/kalText.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Buildings.cpp" />
 		<Unit filename="src/Bus.cpp" />
+		<Unit filename="src/Colors.cpp" />
 		<Unit filename="src/Compound.cpp" />
 		<Unit filename="src/Students.cpp" />
 		<Unit filename="src/kalText.cpp" />

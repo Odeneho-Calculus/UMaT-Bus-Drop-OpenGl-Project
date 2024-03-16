@@ -1,9 +1,10 @@
 # depslib dependency file v1.0
-1709652597 source:c:\users\calcu\desktop\ubd\ubd\main.cpp
+1710606198 source:c:\users\calcu\desktop\ubd\ubd\main.cpp
 	<stdlib.h>
 	<GL/glut.h>
 	<string.h>
 	<stdio.h>
+	<iostream>
 	"Students.h"
 	"Bus.h"
 	"Compound.h"
@@ -926,7 +927,7 @@
 	<string.h>
 	<stdio.h>
 
-1709654455 source:c:\users\calcu\desktop\ubd\ubd\src\compound.cpp
+1710573239 source:c:\users\calcu\desktop\ubd\ubd\src\compound.cpp
 	"Compound.h"
 	<stdlib.h>
 	<GL/glut.h>
@@ -939,20 +940,20 @@
 	<string.h>
 	<stdio.h>
 
-1709654550 c:\users\calcu\desktop\ubd\ubd\include\kaltext.h
+1710575418 c:\users\calcu\desktop\ubd\ubd\include\kaltext.h
 	<stdlib.h>
 	<GL/glut.h>
 	<string.h>
 	<stdio.h>
 
-1709654470 source:c:\users\calcu\desktop\ubd\ubd\src\kaltext.cpp
+1710579412 source:c:\users\calcu\desktop\ubd\ubd\src\kaltext.cpp
 	"kalText.h"
 	<stdlib.h>
 	<GL/glut.h>
 	<string.h>
 	<stdio.h>
 
-1709654423 source:c:\users\calcu\desktop\ubd\ubd\src\buildings.cpp
+1709818070 source:c:\users\calcu\desktop\ubd\ubd\src\buildings.cpp
 	"Buildings.h"
 	<stdlib.h>
 	<GL/glut.h>
@@ -964,4 +965,7 @@
 	<GL/glut.h>
 	<string.h>
 	<stdio.h>
+
+1710584885 c:\users\calcu\desktop\ubd\ubd\include\colors.h
+	<string.h>
 

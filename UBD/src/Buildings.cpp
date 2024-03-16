@@ -27,7 +27,7 @@ Buildings::Buildings()
 {
     //ctor
 }
-
+/*
 void Buildings::buildingd(){
 //buliding
 	glColor3ub(255,70,20);
@@ -58,6 +58,136 @@ void Buildings::buildingd(){
 	glVertex2i(704,550-130);
 	glVertex2i(704,520-150);
 	glEnd();
+
+    //windows
+
+    glColor3f(0.0,0.6,0.7);
+	double len2=30;
+    double thick2=30;
+	glPushMatrix();
+	glTranslatef(650-100,520,70.0);
+    glScalef(thick2,len2,thick2);
+	glutSolidCube(1.0);
+	glPopMatrix();
+
+     glColor3f(0.0,0.6,0.7);
+	double len3=30;
+    double thick3=30;
+	glPushMatrix();
+	glTranslatef(650,520,70.0);
+    glScalef(thick3,len3,thick3);
+	glutSolidCube(1.0);
+	glPopMatrix();
+
+	glColor3f(0.0,0.6,0.7);
+	double len4=30;
+    double thick4=30;
+	glPushMatrix();
+	glTranslatef(650+100,520,70.0);
+    glScalef(thick4,len4,thick4);
+	glutSolidCube(1.0);
+	glPopMatrix();
+
+   glColor3f(0.0,0.6,0.7);
+	double len5=30;
+    double thick5=30;
+	glPushMatrix();
+	glTranslatef(650+200,520,70.0);
+    glScalef(thick5,len5,thick5);
+	glutSolidCube(1.0);
+	glPopMatrix();
+
+    glColor3f(0.0,0.6,0.7);
+	double len6=30;
+    double thick6=30;
+	glPushMatrix();
+	glTranslatef(650-100,520+100,70.0);
+    glScalef(thick6,len6,thick6);
+	glutSolidCube(1.0);
+	glPopMatrix();
+
+    glColor3f(0.0,0.6,0.7);
+	double len7=30;
+    double thick7=30;
+	glPushMatrix();
+	glTranslatef(650,520+100,70.0);
+    glScalef(thick7,len7,thick7);
+	glutSolidCube(1.0);
+	glPopMatrix();
+
+    glColor3f(0.0,0.6,0.7);
+	double len8=30;
+    double thick8=30;
+	glPushMatrix();
+	glTranslatef(650+100,520+100,70.0);
+    glScalef(thick8,len8,thick8);
+	glutSolidCube(1.0);
+	glPopMatrix();
+
+	glColor3f(0.0,0.6,0.7);
+	double len9=30;
+    double thick9=30;
+	glPushMatrix();
+	glTranslatef(650+200,520+100,70.0);
+    glScalef(thick9,len9,thick9);
+	glutSolidCube(1.0);
+	glPopMatrix();
+
+}
+*/
+
+void Buildings::buildingd(){
+//buliding
+
+glBegin(GL_POLYGON);
+	glColor3ub(255,70,20);
+  glVertex2i(530,650);
+  glVertex2i(870,650);
+  glVertex2i(870,385);
+  glVertex2i(530,385);
+  glEnd();
+
+  glBegin(GL_POLYGON);
+	glColor3ub(255,70,20);
+  glVertex2i(870,650);
+
+  glVertex2i(970,750);
+  glVertex2i(970,450);
+
+  glVertex2i(870,385);
+  glEnd();
+
+  // building edge line
+glBegin(GL_POLYGON);
+glColor3ub(0,0,0);
+  glVertex2i(870,650);
+
+  glVertex2i(872,652);
+  glVertex2i(872,387);
+
+  glVertex2i(870,385);
+  glEnd();
+
+    //door
+   /* glColor3f(0.0,0.6,0.7);
+	double len1=50;
+    double thick1=80;
+	glPushMatrix();
+	glTranslatef(650+55,520-125,70.0);
+    glScalef(thick1,len1,thick1);
+	glutSolidCube(1.0);
+	glPopMatrix();
+    glColor3ub(0,0,0);
+    glBegin(GL_LINE_LOOP);
+	glVertex2i(550+115,550-130);
+	glVertex2i(630+115,550-130);
+    glVertex2i(630+115,520-150);
+    glVertex2i(550+115,520-150);
+    glEnd();
+    glBegin(GL_LINES);
+	glVertex2i(704,550-130);
+	glVertex2i(704,520-150);
+	glEnd();*/
 
     //windows
 
@@ -209,18 +339,18 @@ void Buildings::Walld(){
 
     glColor3ub(250,220,220);
 	glBegin(GL_POLYGON);
-	glVertex2i(0+250,433);
+	glVertex2i(0+190,433);
 	glVertex2i(300+80,433);
 	glVertex2i(300+80,300);
-	glVertex2i(0+250,300);
+	glVertex2i(0+190,300);
 	glEnd();
 
     glColor3ub(255,200,200);
 	glBegin(GL_POLYGON);
-	glVertex2i(0+260,423);
+	glVertex2i(0+200,423);
 	glVertex2i(300+70,423);
 	glVertex2i(300+70,310);
-	glVertex2i(0+260,310);
+	glVertex2i(0+200,310);
 	glEnd();
 
 }

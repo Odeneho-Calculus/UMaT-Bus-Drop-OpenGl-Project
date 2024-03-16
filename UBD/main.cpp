@@ -1,6 +1,6 @@
 /*
 PROJECT TITLE:: UMaT BUS DROP [UBD]
-DEVELOPED BY KALCULUS GUY
+INTRODUCED IN OOP BY KALCULUS GUY
 ==========================
 ANTWI THOMAS
 SRI.41.008.038.22
@@ -11,6 +11,9 @@ OPENGL PROJECT
 #include <GL/glut.h>
 #include<string.h>
 #include<stdio.h>
+#include <iostream>
+
+using namespace std;
 
 //classes header files
 #include "Students.h"
@@ -48,9 +51,21 @@ GLfloat xangle=0.0,yangle=0.0,zangle=0.0;   /* axis angles */
 					{385,500,70}, {160,467,-70},
 					{320,467,-70},{320,520,-70},
 
-                    {380,520,-70},{380,390,-70},{320,390,-70}};
+                    {380,520,-70},{380,390,-70},{320,390,-70}
 
-	GLfloat colors[][3] = {{1.0,1.0,0.0},{0.0,0.6,0.7},{.3,.4,.5}};
+                    };
+
+
+  GLfloat colors[][4] = {
+    {1.0, 1.5, 1.0, 1.0}, // Yellow with no transparency
+    {0.0, 0.6, 0.7, 0.3}, // Blue-green with 70% transparency
+    {0.3, 0.4, 0.5, 1.0}  // Gray with no transparency
+};
+
+
+	//GLfloat colors[][3] = {{1.0,1.0,0.0},{0.0,0.0,0.0},{.3,.4,.5}};
+
+
 
 //DECLARATIONS FOR THE BUS PARTS & COLOR IN PAGE 2
     GLfloat verticesd[][3] ={{160,390-175,-70},{425,390-175,-70},
@@ -67,7 +82,12 @@ GLfloat xangle=0.0,yangle=0.0,zangle=0.0;   /* axis angles */
 
                     {380,520-175,-70},{380,390-175,-70},{320,390-175,-70}};
 
-	GLfloat colorsd[][3] = {{1.0,1.0,0.0},{0.0,0.6,0.7},{.3,.4,.5}};
+    GLfloat colorsd[][4] = {
+    {1.0, 1.5, 1.0, 1.0}, // Yellow with no transparency
+    {0.0, 0.6, 0.7, 0.3}, // Blue-green with 50% transparency
+    {0.3, 0.4, 0.5, 1.0}  // Gray with no transparency
+};
+	//GLfloat colorsd[][3] = {{1.0,1.0,0.0},{0.0,0.6,0.7},{.3,.4,.5}};
 
 
 
@@ -77,7 +97,7 @@ GLfloat xangle=0.0,yangle=0.0,zangle=0.0;   /* axis angles */
 void polygon(int a, int b, int c , int d,int E,int f)
 {
 	glBegin(GL_POLYGON);
-		glColor3fv(colors[E]);
+		glColor4fv(colors[E]);
 		glVertex3fv(vertices[a]);
 		glVertex3fv(vertices[b]);
 		glVertex3fv(vertices[c]);
@@ -121,7 +141,7 @@ bus.Wheel2();
 void polygond(int a, int b, int c , int d,int E,int f)
 {
 	glBegin(GL_POLYGON);
-		glColor3fv(colorsd[E]);
+		glColor4fv(colorsd[E]);
 		glVertex3fv(verticesd[a]);
 		glVertex3fv(verticesd[b]);
 		glVertex3fv(verticesd[c]);
@@ -207,6 +227,7 @@ void bus_move()
 		var=1;
 }
 
+
 void bus_moved()
 {
 	if(xd>50)
@@ -241,18 +262,25 @@ void bus_moved()
 		varid=1;
 }
 
-static void SpecialKeyFunc( int Key, int x, int y )
-{
-	switch ( Key )
-{
-	case GLUT_KEY_UP:		             /*move to right */
-        glutPostRedisplay();
-		break;
-	case GLUT_KEY_RIGHT:
-        glutPostRedisplay();
-		break;
-	}
+static void SpecialKeyFunc(int Key, int x, int y) {
+    switch (Key) {
+        case GLUT_KEY_UP:
+            // Add your code to handle moving the car forward
+            glutPostRedisplay();
+            break;
+        case GLUT_KEY_RIGHT:
+            // Add your code to handle moving the car to the right
+            glutPostRedisplay();
+            break;
+
+        case GLUT_KEY_HOME:
+           exit(0);
+           break;
+
+    }
 }
+
+
 
 void display(void)
 {
@@ -266,6 +294,11 @@ void display(void)
     {
 	    kTxt.starterPage();
 	}
+    /*if(then==3)
+    {
+	    kTxt.missionPletePage();
+	}*/
+
 	if(then==1)
 	{
 	if(flag)
@@ -365,7 +398,14 @@ void display(void)
    	}
 	if(varid==1)
 		kTxt.text5d();
+
+		//plete
+    /*if(varid==2)
+        then=3;
+        */
 	}
+
+
 }
 	glFlush();
 	glutSwapBuffers();
@@ -395,6 +435,11 @@ int main(int argc, char **argv)
     glutMouseFunc(mouse);
    	glutSpecialFunc( SpecialKeyFunc );
 	glutReshapeFunc(myreshape);
+
+
+	// Enable blending for transparency
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
    	glutMainLoop();
 return 1;

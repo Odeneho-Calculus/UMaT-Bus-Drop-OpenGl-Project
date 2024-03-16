@@ -63,12 +63,23 @@ glColor3f(0.0,1.0,0.0);
 outputNorm(60, 100, "Under The Guidance Of ");
 
 glColor3f(0.0,1.0,0.0);
-outputNorm(60, 80, "DR. Ezekiel Martey");
+outputNorm(60, 80, "Dr. Ezekiel Martey");
 
 
 glColor3f(0.0,1.0,0.0);
 outputNorm(60, 60, "Lecturer @UMaT - SRID");
 
+
+glColor3f(1.0,0.0,0.0);
+outputNorm(670, 160, "Click anywhere to Start");
+}
+
+
+//Mission Complete
+void kalText::missionPletePage(){
+
+glColor3f(0.0,1.0,0.0);
+outputTitle(300, 430, "Mission Complete");
 
 glColor3f(1.0,0.0,0.0);
 outputNorm(670, 160, "Click anywhere to Start");
@@ -123,21 +134,21 @@ outputTitle(830-600+20,40+150, " keys ");
 
 void kalText::text2d(){
    glColor3f(0.0,0.0,0.0);
-   outputTitle(295,400, "UMaT");
+   outputTitle(200,400, "UMaT School Of");
 
 
       glColor3f(0.0,0.0,0.0);
-   outputTitle(270,380, "School Of");
+   outputTitle(230,380, "Railways & ");
 
 
          glColor3f(0.0,0.0,0.0);
-   outputTitle(300,360, "Railways &");
+   outputTitle(215,360, "Infrastructure ");
 
             glColor3f(0.0,0.0,0.0);
-   outputTitle(270,340, "Development");
+   outputTitle(220,340, "Development");
 
                glColor3f(0.0,0.0,0.0);
-   outputTitle(265+6,315, "Essikado");
+   outputTitle(225+6,315, "@Essikado");
 
 }
 
@@ -151,10 +162,10 @@ void kalText::text3(){
   glEnd();
 
   glColor3ub(240,0,0);
-  outputTitle(832-600+20,100+150, "Yay! Now get Kalculus");
+  outputTitle(832-600+20,100+150, "Good! Now get Kalculus");
 
     glColor3ub(240,0,0);
-  outputTitle(832-600+20,100+130, "to SRID Campus");
+  outputTitle(832-600+20,100+130, "to UMaT SRID Campus");
 
     glColor3ub(240,0,0);
   outputTitle(834-600+20,100+110, "just straight ahead.");

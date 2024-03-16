@@ -24,6 +24,7 @@ class kalText
         void outputTitle(int, int, char *);
         void outputNorm(int, int, char *);
         void starterPage();
+        void missionPletePage();
         void text();
         void textd();
         void text1();
