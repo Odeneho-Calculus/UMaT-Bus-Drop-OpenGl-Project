@@ -44,7 +44,6 @@
 			<Add library="gdi32" />
 			<Add directory="C:/Program Files/CodeBlocks/MinGW/x86_64-w64-mingw32/lib" />
 		</Linker>
-
 		<Unit filename="include/Buildings.h" />
 		<Unit filename="include/Bus.h" />
 		<Unit filename="include/Compound.h" />

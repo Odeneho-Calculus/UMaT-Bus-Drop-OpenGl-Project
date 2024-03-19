@@ -1,6 +1,6 @@
 /*
-PROJECT TITLE:: UMaT BUS DROP [UBDS]
-INTRODUCED IN OOP BY KALCULUS GUY
+PROJECT TITLE:: UMaT BUS DROP [UBD]
+DEVELOPED BY KALCULUS GUY
 ==========================
 ANTWI THOMAS
 SRI.41.008.038.22
@@ -71,7 +71,7 @@ outputNorm(60, 60, "Lecturer @UMaT - SRID");
 
 
 glColor3f(1.0,0.0,0.0);
-outputNorm(670, 160, "Press Pg Up to Start");
+outputNorm(670, 160, "Click anywhere to Start");
 }
 
 
@@ -81,11 +81,8 @@ void kalText::missionPletePage(){
 glColor3f(0.0,1.0,0.0);
 outputTitle(300, 430, "Mission Complete");
 
-glColor3f(1.0,1.0,1.0);
-outputTitle(300, 400, "The Bus has been Parked!");
-
 glColor3f(1.0,0.0,0.0);
-outputNorm(670, 160, "Press Home key to Close");
+outputNorm(670, 160, "Click anywhere to Start");
 }
 
 void kalText::text(){

@@ -941,10 +941,8 @@
 	<string.h>
 	<stdio.h>
 
-1710832750 source:c:\users\calcu\desktop\ubds\ubds\main.cpp
+1710848017 source:c:\users\calcu\desktop\ce files\umat-bus-drop-opengl-project-master (1)\umat-bus-drop-opengl-project-master\ubds\main.cpp
 	<stdlib.h>
-	<windows.h>
-	<cmath>
 	<GL/glut.h>
 	<string.h>
 	<stdio.h>
@@ -955,67 +953,31 @@
 	"kalText.h"
 	"Buildings.h"
 
-1710732898 c:\users\calcu\desktop\ubds\ubds\include\students.h
+1710848024 c:\users\calcu\desktop\ce files\umat-bus-drop-opengl-project-master (1)\umat-bus-drop-opengl-project-master\ubds\include\students.h
 	<stdlib.h>
 	<GL/glut.h>
 	<string.h>
 	<stdio.h>
 
-1710732693 c:\users\calcu\desktop\ubds\ubds\include\bus.h
+1710848023 c:\users\calcu\desktop\ce files\umat-bus-drop-opengl-project-master (1)\umat-bus-drop-opengl-project-master\ubds\include\bus.h
 	<stdlib.h>
 	<GL/glut.h>
 	<string.h>
 	<stdio.h>
 
-1710732912 c:\users\calcu\desktop\ubds\ubds\include\compound.h
+1710848024 c:\users\calcu\desktop\ce files\umat-bus-drop-opengl-project-master (1)\umat-bus-drop-opengl-project-master\ubds\include\compound.h
 	<stdlib.h>
 	<GL/glut.h>
 	<string.h>
 	<stdio.h>
 
-1710732905 c:\users\calcu\desktop\ubds\ubds\include\kaltext.h
+1710848024 c:\users\calcu\desktop\ce files\umat-bus-drop-opengl-project-master (1)\umat-bus-drop-opengl-project-master\ubds\include\kaltext.h
 	<stdlib.h>
 	<GL/glut.h>
 	<string.h>
 	<stdio.h>
 
-1710732665 c:\users\calcu\desktop\ubds\ubds\include\buildings.h
-	<stdlib.h>
-	<GL/glut.h>
-	<string.h>
-	<stdio.h>
-
-1710807478 source:c:\users\calcu\desktop\ubds\ubds\src\buildings.cpp
-	"Buildings.h"
-	<stdlib.h>
-	<GL/glut.h>
-	<string.h>
-	<stdio.h>
-	<iostream>
-
-1710732950 source:c:\users\calcu\desktop\ubds\ubds\src\bus.cpp
-	"Bus.h"
-	<stdlib.h>
-	<GL/glut.h>
-	<string.h>
-	<stdio.h>
-
-1710775648 source:c:\users\calcu\desktop\ubds\ubds\src\compound.cpp
-	"Compound.h"
-	<stdlib.h>
-	<GL/glut.h>
-	<string.h>
-	<stdio.h>
-
-1710746089 source:c:\users\calcu\desktop\ubds\ubds\src\kaltext.cpp
-	"kalText.h"
-	<stdlib.h>
-	<GL/glut.h>
-	<string.h>
-	<stdio.h>
-
-1710732981 source:c:\users\calcu\desktop\ubds\ubds\src\students.cpp
-	"Students.h"
+1710848022 c:\users\calcu\desktop\ce files\umat-bus-drop-opengl-project-master (1)\umat-bus-drop-opengl-project-master\ubds\include\buildings.h
 	<stdlib.h>
 	<GL/glut.h>
 	<string.h>

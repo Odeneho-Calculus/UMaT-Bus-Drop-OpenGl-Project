@@ -1,6 +1,6 @@
 /*
-PROJECT TITLE:: UMaT BUS DROP [UBDS]
-INTRODUCED IN OOP BY KALCULUS GUY
+PROJECT TITLE:: UMaT BUS DROP [UBD]
+DEVELOPED BY KALCULUS GUY
 ==========================
 ANTWI THOMAS
 SRI.41.008.038.22
@@ -20,9 +20,7 @@ OPENGL PROJECT
 class kalText
 {
     public:
-        kalText();//Constructor
-
-        // Function declarations for handling text output
+        kalText();
         void outputTitle(int, int, char *);
         void outputNorm(int, int, char *);
         void starterPage();

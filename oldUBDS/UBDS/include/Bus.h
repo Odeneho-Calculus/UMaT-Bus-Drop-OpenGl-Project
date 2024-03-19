@@ -1,6 +1,6 @@
 /*
-PROJECT TITLE:: UMaT BUS DROP [UBDS]
-INTRODUCED IN OOP BY KALCULUS GUY
+PROJECT TITLE:: UMaT BUS DROP [UBD]
+DEVELOPED BY KALCULUS GUY
 ==========================
 ANTWI THOMAS
 SRI.41.008.038.22
@@ -18,9 +18,8 @@ OPENGL PROJECT
 class Bus
 {
     public:
-        Bus();  // Constructor
+        Bus();
 
-        // Function declarations for drawing bus components
         void Wheel1();
         void Wheel1d();
         void Wheel2();
@@ -28,7 +27,6 @@ class Bus
         void busStop();
         void Flines();
         void Flinesd();
-
 
     protected:
 

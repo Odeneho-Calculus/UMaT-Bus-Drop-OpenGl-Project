@@ -1,6 +1,6 @@
 /*
-PROJECT TITLE:: UMaT BUS DROP [UBDS]
-INTRODUCED IN OOP BY KALCULUS GUY
+PROJECT TITLE:: UMaT BUS DROP [UBD]
+DEVELOPED BY KALCULUS GUY
 ==========================
 ANTWI THOMAS
 SRI.41.008.038.22
@@ -19,9 +19,7 @@ OPENGL PROJECT
 class Students
 {
     public:
-        Students();//Constructor
-
-        //Function declarations for drawing students
+        Students();
         void studBoy1();
         void studBoy2();
         void studBoy2Drop();

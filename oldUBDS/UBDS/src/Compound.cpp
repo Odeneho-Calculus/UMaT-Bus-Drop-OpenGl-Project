@@ -1,5 +1,5 @@
 /*
-PROJECT TITLE:: UMaT BUS DROP [UBDS]
+PROJECT TITLE:: UMaT BUS DROP [UBD]
 INTRODUCED IN OOP BY KALCULUS GUY
 ==========================
 ANTWI THOMAS
@@ -23,7 +23,7 @@ Compound::Compound()
 void Compound::Road2(){
 /************** left part of road  *********/
 int x,y;
-glColor3ub (97, 201, 85);
+glColor3ub(7,255,13);
 glBegin(GL_POLYGON);
       	glVertex2i(0,650);
 	  	glVertex2i(1000,650);
@@ -76,15 +76,13 @@ glEnd();
 void Compound::Road2d(){
 	/************** left part of road  *********/
 int x;
-int y;
-glColor3ub (97, 201, 85);
+glColor3ub(7,255,130);
 glBegin(GL_POLYGON);
       	glVertex2i(0,650);
 	  	glVertex2i(1000,650);
       	glVertex2i(1000,0);
       glVertex2i(0,0);
 glEnd();
-
 
 glColor3ub(30,40,50);
 glBegin(GL_POLYGON);
@@ -95,24 +93,6 @@ glBegin(GL_POLYGON);
 glEnd();
 
 
-
-//road to the entrance
-glBegin(GL_POLYGON);
-glVertex2i(390,400);//TopLeft
-glVertex2i(640,400);//TopRight
-glVertex2i(900,140);//bottomRight
-glVertex2i(520,140);//bottomLeft
-glEnd();
-
-glBegin(GL_POLYGON);
-glVertex2i(900,340);//TopRight
-glVertex2i(1000,340);//TopLeft
-
-glVertex2i(640,400);//bottomRight
-glVertex2i(390,400);//bottomLeft
-
-
-glEnd();
 
 /************  STRIPES  ************/
 
@@ -126,24 +106,12 @@ glBegin(GL_POLYGON);
 	  		glVertex2f(x+30,352.5+19-175);
 glEnd();
 }
-/*
-for(y=450;y>0;y=y-60)
-{
-glBegin(GL_POLYGON);
-			glVertex2f(650,y);
-	  		glVertex2f(655,y);
-	  		glVertex2f(655,y-30);
-	  		glVertex2f(650,y-30);
-glEnd();
-}
-*/
-
 }
 
 
 
 
-//This Tree is found at the bus stop far left - down
+
 void Compound::Tree1(){
 //trunk1
 	glColor3ub(95,6,5);
@@ -162,8 +130,8 @@ void Compound::Tree1(){
 	glPushMatrix();
 	glLoadIdentity();
 
-    glTranslated(100,200,0.0);
-    glutSolidSphere(70,70,3);
+    glTranslated(100,235-48,0.0);
+    glutSolidCone(70,140,3,2);
     glPopMatrix();
 
  //leaves2
@@ -171,8 +139,8 @@ void Compound::Tree1(){
     glColor3f(0.0,0.2,0.0);
 	glPushMatrix();
 	glLoadIdentity();
-    glTranslated(50,150,0.0);
-    glutSolidSphere(50,100,3);
+    glTranslated(100,270-48,0.0);
+    glutSolidCone(60,120,3,2);
     glPopMatrix();
 
 // leaves3
@@ -180,37 +148,12 @@ void Compound::Tree1(){
     glColor3f(0.0,0.2,0.0);
 	glPushMatrix();
 	glLoadIdentity();
-    glTranslated(150,150,0);
-    glutSolidSphere(50,100,3);
+    glTranslated(100,300-48,0);
+    glutSolidCone(50,100,3,2);
     glPopMatrix();
-
-
-    //flowers far right
-    glColor3ub(140,0,0);
-	glPushMatrix();
-	glLoadIdentity();
-	glTranslatef(150+10,150+10,0);
-	glutSolidSphere(5,20,20);
-	glPopMatrix();
-
-    //flowers 2 far left
-    glColor3ub (52, 195, 227);
-	glPushMatrix();
-	glLoadIdentity();
-	glTranslatef(30+10,150+10,0);
-	glutSolidSphere(5,20,20);
-	glPopMatrix();
-
-    //flowers 2 far top
-    glColor3f (1.0,1.0,0.0);
-	glPushMatrix();
-	glLoadIdentity();
-	glTranslatef(100,200+30,0.0);
-	glutSolidSphere(5,20,20);
-	glPopMatrix();
 }
 
-//This Tree is found at the campus far left
+
 void Compound::Tree1d(){
  //trunk1
 	glColor3ub(95,6,5);
@@ -229,60 +172,30 @@ void Compound::Tree1d(){
 	glPushMatrix();
 	glLoadIdentity();
 
-    glTranslated(100,570,0.0);
-    glutSolidSphere(70,70,3);
+    glTranslated(100,230+290,0.0);
+    glutSolidCone(60,120,3,2);
     glPopMatrix();
 
-
  //leaves2
-
 
     glColor3f(0.0,0.2,0.0);
 	glPushMatrix();
 	glLoadIdentity();
-    glTranslated(55,530,0.0);
-    glutSolidSphere(50,100,3);
+    glTranslated(100,260+290,0.0);
+    glutSolidCone(50,100,3,2);
     glPopMatrix();
-
-
 
 // leaves3
 
     glColor3f(0.0,0.2,0.0);
 	glPushMatrix();
 	glLoadIdentity();
-    glTranslated(145,530,0);
-    glutSolidSphere(50,100,3);
+    glTranslated(100,290+290,0);
+    glutSolidCone(40,800,3,2);
     glPopMatrix();
-
-
-
-    //flowers far right
-    glColor3ub (52, 195, 227);
-	glPushMatrix();
-	glLoadIdentity();
-	glTranslatef(145,530+10,0);
-	glutSolidSphere(5,20,20);
-	glPopMatrix();
-
-    //flowers 2 far left
-    glColor3ub(140,0,0);
-	glPushMatrix();
-	glLoadIdentity();
-	glTranslatef(55,530+10,0.0);
-	glutSolidSphere(5,20,20);
-	glPopMatrix();
-
-    //flowers 2 far top
-    glColor3f (1.0,1.0,0.0);
-	glPushMatrix();
-	glLoadIdentity();
-	glTranslatef(100,570+30,0.0);
-	glutSolidSphere(5,20,20);
-	glPopMatrix();
 }
 
-//This Tree is found at the bus stop, near the the station
+
 void Compound::Tree2(){
     //trunk1
 	glColor3ub(95,6,5);
@@ -294,17 +207,15 @@ void Compound::Tree2(){
 	glutSolidCube(1.0);
 	glPopMatrix();
 
-
-
-	//leaves1
+//leaves1
 
 
     glColor3f(0.0,0.2,0.0);
 	glPushMatrix();
 	glLoadIdentity();
 
-    glTranslated(550,570,0.0);
-    glutSolidSphere(70,70,3);
+    glTranslated(100+450,230+310,0.0);
+    glutSolidCone(70,140,3,2);
     glPopMatrix();
 
  //leaves2
@@ -312,8 +223,8 @@ void Compound::Tree2(){
     glColor3f(0.0,0.2,0.0);
 	glPushMatrix();
 	glLoadIdentity();
-    glTranslated(520,550,0.0);
-    glutSolidSphere(50,100,3);
+    glTranslated(100+450,260+310,0.0);
+    glutSolidCone(60,120,3,2);
     glPopMatrix();
 
 // leaves3
@@ -321,65 +232,52 @@ void Compound::Tree2(){
     glColor3f(0.0,0.2,0.0);
 	glPushMatrix();
 	glLoadIdentity();
-    glTranslated(580,550,0);
-    glutSolidSphere(50,100,3);
+    glTranslated(100+450,290+310,0);
+    glutSolidCone(50,100,3,2);
     glPopMatrix();
-
-     //flowers far right
-    glColor3ub(140,0,0);
-	glPushMatrix();
-	glLoadIdentity();
-	glTranslatef(520,530+10,0.0);
-	glutSolidSphere(5,20,20);
-	glPopMatrix();
-
-    //flowers 2 far left
-    glColor3ub (52, 195, 227);
-	glPushMatrix();
-	glLoadIdentity();
-	glTranslatef(580,530+10,0);
-	glutSolidSphere(5,20,20);
-	glPopMatrix();
-
-    //flowers 2 far top
-    glColor3f (1.0,1.0,0.0);
-	glPushMatrix();
-	glLoadIdentity();
-	glTranslatef(550,570+30,0.0);
-	glutSolidSphere(5,20,20);
-	glPopMatrix();
-
 }
 
-//This Tree is found at the campus far left with only one leaf
 void Compound::Tree2d(){
  //trunk1
 	glColor3ub(95,6,5);
 	double len=80;
     double thick=15;
 	glPushMatrix();
-	glTranslated(250,150+340,0.0);
+	glTranslated(200,150+330,0.0);
     glScaled(thick,len,thick);
 	glutSolidCube(1.0);
 	glPopMatrix();
 
-
-
-
-	//leaves1
+//leaves1
 
 
     glColor3f(0.0,0.2,0.0);
 	glPushMatrix();
 	glLoadIdentity();
 
-    glTranslated(250,570,0.0);
-    glutSolidSphere(70,70,3);
+    glTranslated(200,230+290,0.0);
+    glutSolidCone(60,120,3,2);
     glPopMatrix();
 
+ //leaves2
 
+    glColor3f(0.0,0.2,0.0);
+	glPushMatrix();
+	glLoadIdentity();
+    glTranslated(200,260+290,0.0);
+    glutSolidCone(50,100,3,2);
+    glPopMatrix();
+
+// leaves3
+
+    glColor3f(0.0,0.2,0.0);
+	glPushMatrix();
+	glLoadIdentity();
+    glTranslated(200,290+290,0);
+    glutSolidCone(40,800,3,2);
+    glPopMatrix();
 }
-//Implemented but not used
+
 void Compound::Treed(){
 //trunk1
 	glColor3ub(95,6,5);
@@ -421,8 +319,6 @@ void Compound::Treed(){
     glPopMatrix();
 }
 
-
-//Shrubs opposite the school
 void Compound::Shrubd(){
    glColor3ub(0,160,0);
     double len0=57;

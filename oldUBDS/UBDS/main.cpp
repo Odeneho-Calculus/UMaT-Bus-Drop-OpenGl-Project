@@ -1,5 +1,5 @@
 /*
-PROJECT TITLE:: UMaT BUS DROP [UBDS]
+PROJECT TITLE:: UMaT BUS DROP [UBD]
 INTRODUCED IN OOP BY KALCULUS GUY
 ==========================
 ANTWI THOMAS
@@ -7,17 +7,13 @@ SRI.41.008.038.22
 CE200[B]
 OPENGL PROJECT
 */
-// Standard Library headers
-#include <stdlib.h>    // Standard library functions for memory allocation, randomness, etc.
-#include <windows.h>   // Windows-specific functions and macros
-#include <cmath>       // Math functions and constants
-#include <GL/glut.h>   // OpenGL Utility Toolkit for creating graphical user interfaces
-#include <string.h>    // String manipulation functions
-#include <stdio.h>     // Standard Input/Output functions
-#include <iostream>    // Standard Input/Output stream objects
+#include <stdlib.h>
+#include <GL/glut.h>
+#include<string.h>
+#include<stdio.h>
+#include <iostream>
 
-using namespace std;  // Using the standard namespace for C++ standard library
-
+using namespace std;
 
 //classes header files
 #include "Students.h"
@@ -61,8 +57,8 @@ GLfloat xangle=0.0,yangle=0.0,zangle=0.0;   /* axis angles */
 
 
   GLfloat colors[][4] = {
-    {0, 66, 101, 1.0}, // navyBlue with no transparency
-    {0.0, 0.0, 0.0, 0.5}, // Black with 50% transparency
+    {1.0, 1.5, 1.0, 1.0}, // Yellow with no transparency
+    {0.0, 0.6, 0.7, 0.3}, // Blue-green with 70% transparency
     {0.3, 0.4, 0.5, 1.0}  // Gray with no transparency
 };
 
@@ -87,8 +83,8 @@ GLfloat xangle=0.0,yangle=0.0,zangle=0.0;   /* axis angles */
                     {380,520-175,-70},{380,390-175,-70},{320,390-175,-70}};
 
     GLfloat colorsd[][4] = {
-    {0, 66, 101, 1.0}, // navyBlue with no transparency
-    {0.0, 0.0, 0.0, 0.5}, // Black with 50% transparency
+    {1.0, 1.5, 1.0, 1.0}, // Yellow with no transparency
+    {0.0, 0.6, 0.7, 0.3}, // Blue-green with 50% transparency
     {0.3, 0.4, 0.5, 1.0}  // Gray with no transparency
 };
 	//GLfloat colorsd[][3] = {{1.0,1.0,0.0},{0.0,0.6,0.7},{.3,.4,.5}};
@@ -96,7 +92,7 @@ GLfloat xangle=0.0,yangle=0.0,zangle=0.0;   /* axis angles */
 
 
 /*-------------------------------------------------------------------*/
-				//	FUNCTION cube for the bus in page 1
+				//	FUNCTION cube
 /*-------------------------------------------------------------------*/
 void polygon(int a, int b, int c , int d,int E,int f)
 {
@@ -140,7 +136,7 @@ bus.Wheel2();
 }
 
 /*-------------------------------------------------------------------*/
-				//	FUNCTION cube for the bus in page 2
+				//	FUNCTION cube
 /*-------------------------------------------------------------------*/
 void polygond(int a, int b, int c , int d,int E,int f)
 {
@@ -183,7 +179,7 @@ void colorcubed()
     bus.Wheel2d();
 }
 
-//when mouse is clicked
+
 void mouse(int btn,int state,int x,int y)
 {
 	if(btn==GLUT_LEFT_BUTTON && state==GLUT_DOWN)
@@ -193,12 +189,12 @@ void mouse(int btn,int state,int x,int y)
 	}
 }
 
-//Bus to move function in page 1
+
 void bus_move()
 {
 	if(x<50)
 {
-        x+=3;
+		x+=3;
 		glPushMatrix();
 		glTranslatef(-100,0,-90);
 		Studs.studBoy2();
@@ -211,15 +207,12 @@ void bus_move()
 		bus.Flines();
 		kTxt.text1();
 		glPopMatrix();
-
 }
 	if(x>=50)
 		vari=1;
-		cout <<"x = " << x <<endl;
 	if(flag55==1 )
 	{
-
-        x+=6;
+		x+=6;
 		glPushMatrix();
 		glTranslatef(x,0,0);
 		bus.Wheel1();
@@ -230,14 +223,11 @@ void bus_move()
 		glPopMatrix();
 	}
 
-	if(x>=51)
-		varid=3;//switches to next page
-
 	if(x>=865)
-		var=1;//switches to next page
+		var=1;
 }
 
-//Bus to move function in page 2
+
 void bus_moved()
 {
 	if(xd>50)
@@ -255,7 +245,6 @@ void bus_moved()
 		bus.Flinesd();
 		kTxt.text1d();
 		glPopMatrix();
-
 }
 	if(flag551==1)
 {
@@ -271,64 +260,18 @@ void bus_moved()
 	}
 	if(xd>50)
 		varid=1;
-        cout <<"xd = " << xd <<endl;
-        if (xd>=871)
-            varid=2;
-
-
-
 }
 
-void pleteMission(){
-                then = 3;
-                glutPostRedisplay();
-                cout <<"Car Parked when pos was " << xd <<endl;
-
-}
-//Special Key function for controlling
 static void SpecialKeyFunc(int Key, int x, int y) {
     switch (Key) {
         case GLUT_KEY_UP:
-            if(varid == 2){
-                pleteMission();
-                break;
-            }else{
-                glutPostRedisplay();
-                break;
-            }
+            // Add your code to handle moving the car forward
+            glutPostRedisplay();
+            break;
         case GLUT_KEY_RIGHT:
-            if(varid == 2){
-                pleteMission();
-                break;
-            }else{
-                glutPostRedisplay();
-                break;
-            }
-
-        case GLUT_KEY_PAGE_UP:
-            if(varid == 2){
-                pleteMission();
-                break;
-            }else{
-                then = 1;
-                glutPostRedisplay();
-                break;
-            }
-
-        case GLUT_KEY_F1:
-            if(varid == 3){
-                    var=1;//teleport to next page
-                    glutPostRedisplay();
-                    break;
-
-            }else{
-                cout << "Can't teleport if student is not picked\n";
-                //glutPostRedisplay();
-                break;
-
-
-            }
-
+            // Add your code to handle moving the car to the right
+            glutPostRedisplay();
+            break;
 
         case GLUT_KEY_HOME:
            exit(0);
@@ -338,7 +281,7 @@ static void SpecialKeyFunc(int Key, int x, int y) {
 }
 
 
-//What to be display
+
 void display(void)
 {
 	glMatrixMode(GL_PROJECTION);
@@ -350,12 +293,11 @@ void display(void)
 	if(then==0)
     {
 	    kTxt.starterPage();
-
 	}
-    if(then==3)
+    /*if(then==3)
     {
 	    kTxt.missionPletePage();
-	}
+	}*/
 
 	if(then==1)
 	{
@@ -396,7 +338,6 @@ void display(void)
 		compound.lampPost4();
         kTxt.text2();
 		bus_move();
-		//bus_moveBack();
 		flag55=1;
 	}
     if(vari==1)
@@ -419,7 +360,7 @@ void display(void)
 		builds.Walld();
 	    kTxt.text2d();
 		builds.Gated();
-		//compound.Treed();
+		compound.Treed();
 		compound.Tree1d();
 		compound.Tree2d();
 		compound.Shrubd();
@@ -431,7 +372,6 @@ void display(void)
 		kTxt.text3d();
 		kTxt.text4d();
 		bus_moved();
-        //bus_movedBack();
 		glPopMatrix();
  	}
   	else
@@ -442,7 +382,7 @@ void display(void)
 		builds.Walld();
 		kTxt.text2d();
 		builds.Gated();
-		//compound.Treed();
+		compound.Treed();
 		compound.Tree1d();
 		compound.Tree2d();
 		compound.Shrubd();
@@ -454,15 +394,15 @@ void display(void)
         kTxt.text3d();
 		kTxt.text4d();
 		bus_moved();
-        //bus_moveBack();
 	    flag551=1;
    	}
 	if(varid==1)
 		kTxt.text5d();
 
-
-
-
+		//plete
+    /*if(varid==2)
+        then=3;
+        */
 	}
 
 
@@ -471,74 +411,40 @@ void display(void)
 	glutSwapBuffers();
 }
 
-
 void myreshape(int w,int h)
 {
-    // Set viewport dimensions
-    glViewport(0, 0, w, h);
-
-    // Set the matrix mode to GL_PROJECTION
-    glMatrixMode(GL_PROJECTION);
-
-    // Load the identity matrix to reset any previous transformations
-    glLoadIdentity();
-
-    // Adjust the projection based on window dimensions
-    if (w <= h)
-        // Adjust the orthographic projection based on window aspect ratio
-        glOrtho(-2.0, 2.0, -2.0 * (GLfloat)h / (GLfloat)w, 2.0 * (GLfloat)h / (GLfloat)w, -10.0, 10.0);
-    else
-        // Adjust the orthographic projection based on window aspect ratio
-        glOrtho(-2.0 * (GLfloat)w / (GLfloat)h, 2.0 * (GLfloat)w / (GLfloat)h, -2.0, 2.0, -10.0, 10.0);
-
-    // Set the matrix mode back to GL_MODELVIEW for further transformations
-    glMatrixMode(GL_MODELVIEW);
+	glViewport(0,0,w,h);
+	glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
+	if(w<=h)
+		 glOrtho(-2.0,2.0,-2.0*(GLfloat)h/(GLfloat)w,2.0*(GLfloat)h/(GLfloat)w,-10.0,10.0);
+	else
+		 glOrtho(-2.0*(GLfloat)w/(GLfloat)h,2.0*(GLfloat)w/(GLfloat)h,-2.0,2.0,-10.0,10.0);
+	glMatrixMode(GL_MODELVIEW);
 }
 
 /**************  main  ***********/
 int main(int argc, char **argv)
-{
-    // Display instructions
-    cout << "Press [PgUp] to start driving\n";
-    cout << "Press [Home] to close application\n";
-    cout << "Press [F1]Teleport to next page\n";
+ {
+   	glutInit(&argc, argv);
+   	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH );
+   	glutInitWindowSize(1000,650);
+   	glutInitWindowPosition(0,0);
+   	glutCreateWindow("UMaT BUS DROP");
+   	glutDisplayFunc(display);
+    glutMouseFunc(mouse);
+   	glutSpecialFunc( SpecialKeyFunc );
+	glutReshapeFunc(myreshape);
 
-    // Initialize GLUT
-    glutInit(&argc, argv);
 
-    // Set display mode
-    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH);
-
-    // Set initial window size
-    glutInitWindowSize(1000, 650);
-
-    // Set initial window position
-    glutInitWindowPosition(0, 0);
-
-    // Create a window with the specified title
-    glutCreateWindow("UMaT BUS DROP");
-
-    // Specify the function to be called for rendering
-    glutDisplayFunc(display);
-
-    // Specify the function to be called for handling special key events
-    glutSpecialFunc(SpecialKeyFunc);
-
-    // Specify the function to be called when the window is resized
-    glutReshapeFunc(myreshape);
-
-    // Enable blending for transparency
+	// Enable blending for transparency
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-    // Enter the GLUT event processing loop
-    glutMainLoop();
-
-    // Indicate successful termination
-    return 0;
+   	glutMainLoop();
+return 1;
 }
 
 /*
 MADE WITH LOVE
 */
-

@@ -1,6 +1,6 @@
 /*
-PROJECT TITLE:: UMaT BUS DROP [UBDS]
-INTRODUCED IN OOP BY KALCULUS GUY
+PROJECT TITLE:: UMaT BUS DROP [UBD]
+DEVELOPED BY KALCULUS GUY
 ==========================
 ANTWI THOMAS
 SRI.41.008.038.22
@@ -19,9 +19,7 @@ OPENGL PROJECT
 class Compound
 {
     public:
-        Compound(); //Constructor
-
-        // Function declarations for drawing Compound components
+        Compound();
         void Road2();
         void Road2d();
         void Tree1();

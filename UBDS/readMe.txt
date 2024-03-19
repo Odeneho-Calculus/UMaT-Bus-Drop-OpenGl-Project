@@ -542,3 +542,30 @@ int main(int argc, char **argv)
 MADE WITH LOVE
 */
 
+
+/*
+Introduction:
+The UMaT Bus Dropping Simulation uses OpenGL to simulate a school bus system within the University of Mines and Technology (UMaT) campus.
+
+Objective:
+Simulate a school bus picking up students at various stops and dropping them off at the school bus stop to optimize campus transportation.
+
+Functionality Overview:
+
+The simulation starts with the bus at a designated point.
+Students are generated at random stops.
+The bus moves, picks up students, and drops them off.
+Ends when all students are dropped.
+Implementation Details:
+
+Utilizes OpenGL for rendering.
+Algorithms control student generation, bus movement, and drop-offs.
+Challenges and Solutions:
+Addressed challenges like performance optimization and realistic route design through iterative development and algorithm refinement.
+
+Conclusion:
+The UMaT Bus Dropping Simulation enhances campus transportation efficiency, benefiting students and staff.
+
+Future Work:
+Potential enhancements include feature additions and performance optimizations.
+*/
